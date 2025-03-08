@@ -1,0 +1,126 @@
+/* CSS GOES HERE */
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background: #DDDBFF;
+    width: 100%;
+    width: auto;
+    text-align:center;
+    font-size: 45px;
+    font-family: "Haettenschweiler";
+    padding-top: 20px;
+    padding-bottom: 20px;
+    word-spacing: 100px;
+    position: sticky;
+    top: 0;
+      }
+  nav a {
+    text-decoration: none;
+    color:#000;
+    display:inline;
+    text-align:center
+  }
+  
+header {
+    color: #000;
+    font-family: Haettenschweiler;
+    font-size: 200px;
+    font-style: normal;
+}
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+section {
+    width: 100%;
+    min-height: 50vh;
+    padding: 60px 40px;
+    background-color: white;
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    text-align: left;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 200px;
+    color: #000;
+    font-family: Haettenschweiler;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin:0;
+}
+h2{
+    margin:0;
+}
+#p{
+    font-family: Neue Haas Grotesk Display Pro, serif;
+}
+.About-Text{
+    font-size: 24px;
+    margin:0;
+}
+.Subheading{
+    text-align: center;
+    font-family: Neue Haas Grotesk Display Pro;
+    color: #2F27CE;
+}
+.section-title{
+    font-family: Haettenschweiler;
+    font-size: 96px;
+    font-weight: normal;
+    margin:0;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+.grid-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: auto auto; /* 2 rows */
+    gap: 100px; /* Space between grid items */
+    max-width: 800px; /* Adjust width */
+    margin: auto; /* Center the grid */
+    text-align: center; /* Center text */
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    justify-content: top;
+    
+}
+.grid-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+h3{
+    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-size: 28px;
+    margin:0;
+    padding-top: 15px;
+}
+#faq p{
+    font-size: 16
+}
+.footer p{
+    text-align: center;
+}
