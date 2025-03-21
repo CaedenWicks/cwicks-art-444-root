@@ -7,7 +7,6 @@ html {
 nav {
     background: #DDDBFF;
     width: 100%;
-    width: auto;
     text-align:center;
     font-size: 45px;
     font-family: "Haettenschweiler";
@@ -41,11 +40,11 @@ body {
 section {
     width: 100%;
     min-height: 50vh;
-    padding: 60px 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     background-color: white;
 }
 .container {
-    width: 100%;
     max-width: 960px;
     text-align: left;
     margin: 0 auto;
@@ -86,8 +85,9 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 10px;
+    width: 100%;
     text-align: center;
-    margin-top: auto;
+    bottom: 0;
 }
 .grid-container {
     padding-top: 50px;
@@ -121,6 +121,131 @@ h3{
 #faq p{
     font-size: 16
 }
-.footer p{
-    text-align: center;
+/* TABLET VIEW */
+@media screen and (max-width: 992px) {
+    nav {
+        font-size: 30px; /* Reduce nav font size */
+        word-spacing: 50px; /* Reduce spacing between links */
+        width: 100%; /* Ensure it stretches across */
+        padding: 20px 0; /* Adjust padding */
+    }
+    body{
+        
+    }
+    .container {
+        width: auto; /* Ensure container takes full width */
+        padding-left: 25px;
+    }
+
+    section {
+        min-height: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px; /* Adjust bottom padding */
+        width: 100%; /* Ensure sections take full width */
+    }
+    h1 {
+        font-size: 120px; /* Decrease header size */
+    }
+
+    .section-title {
+        font-size: 72px; /* Reduce section title size */
+    }
+
+    .About-Text {
+        font-size: 18px; /* Slightly smaller text */
+        line-height: 1.6; /* Improve text readability */
+    }
+    .grid-container {
+            grid-template-columns: 1fr; /* Use a single column layout */
+            gap: 30px; /* Reduce spacing between items */
+        }
+
+    footer {
+        width: auto; /* Ensure footer stretches across the full width */
+        padding: 20px; /* Add more padding */
+        text-align: center; /* Center the footer content */
+    }
+    #faq p{
+        font-size: 14px;
+    }
 }
+
+
+/* MOBILE VIEW */
+@media screen and (max-width: 478px) {
+    nav {
+        font-size: 20px; /* Further reduce nav font size */
+        word-spacing: 20px; /* Reduce spacing between links */
+        padding: 15px 0; /* Adjust padding */
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 80px; /* Further decrease header size */
+    }
+
+    .section-title {
+        font-size: 48px; /* Further reduce section title size */
+        padding-bottom: 20px;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .About-Text {
+        font-size: 16px; /* Further reduce text size */
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .grid-container {
+        padding-top: 30px;
+        gap: 20px; /* Further reduce spacing between items */
+    }
+
+    .grid-item p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 10px;
+    
+    }
+
+    #faq p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .Subheading {
+        font-size: 18px;
+    }
+    #gallery .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+        gap: 20px; /* Space between images */
+        justify-items: center; /* Center images horizontally */
+      }
+      
+      #gallery img {
+        max-width: 100%; /* Ensure images fit within their grid cells */
+        height: auto; /* Maintain aspect ratio */
+      }
+      
+      
+}
+
