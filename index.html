@@ -7,6 +7,7 @@
   <meta http-equiv="refresh" content="150">
   <title>Welcome to my new website!</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kez3erd.css">
 </head>
 <body>
 
@@ -19,11 +20,13 @@
   </section>
 
   <nav>
-    <a href="#home">Home</a>
+  <div class="element">
+    <a href="#header">Home</a>
     <a href="#about">About</a>
     <a href="#skills  ">Skills</a>
     <a href="#gallery">Gallery</a>
     <a href="#faq">FAQs</a>
+  </div>
   </nav>
   
 <!-- ABOUT SECTION --> 
@@ -51,26 +54,27 @@
           <img src="images/adobe-skills-icon.jpg" alt="Adobe Icon" width="100" height="100"/>
           <h3>Adobe Suite</h3>
           <p>I have been using the Adobe Suite to create high-quality visuals, branding materials, and digital assets. I am proficient in Adobe Illustrator, InDesign, Photoshop and more...</p>
-        </div>
+      </div>
         <div class="grid-item">
           <img class="Icon">
           <img src="images/problem-skills-icon.jpg" alt="problem icon" width="100" height="100"/>
           <h3>Problem Solving</h3>
           <p>I enjoy finding creative solutions to design challenges. Whether it's improving a layout or making a website easier to use, I focus on making designs both functional and user-friendly.</p>
-        </div>
+      </div>
         <div class="grid-item">
           <img class="Icon">
           <img src="images/figma-skills-icon.jpg" alt="Figma Icon" width="100" height="100"/>
             <h3>Figma</h3>
             <p>Figma is my go-to tool for web design, wireframing, and prototyping. I have been using it to create intuitive interfaces, collaborate in real time, and make quick changes based on feedback, ensuring seamless design workflows.</p>
         </div>
-        </div>
+      </div>
       </section>
 
 <!-- GALLERY SECTION -->  
 <section id="gallery">
   <div class="container">
     <h2 class= "section-title">My Work</h2>
+    <div class="image-scroll">
     <img src="images/assignment-screen.jpg" alt="assignment screen" width="300" height="200"/>
     <img src="images/search-screen.png" alt="search screen" width="100" height="200"/>
     <img src="images/project-3-cover.jpg" alt="Project 3 Cover" width="230" height="250"/>
@@ -87,29 +91,39 @@
     <img src="images/ride-updates-screen.png" alt="Ride Updates" width="100" height="200"/>
     <img src="images/project-5.jpg" alt="Project 5" width="230" height="200"/>
   </div>
+  <div class="image-scroll-2">
+    <img src="images/Mockup Van.jpg" alt="van mockup" width="300" height="200"/>
+    <img src="images/yardsign mockup.jpg" alt="van mocyakup" width="300" height="200"/>
+    <img src="images/Postcard Mockup.png" alt="postcard" width="300" height="200"/>
+    <img src="images/Poster-Mockup-Creatlon.png" alt="poster" width="300" height="200"/>
+    <img src="images/Resume Poster Mockup.png" alt="resume" width="300" height="200"/>
+    <img src="images/CW Business Card Mockup.jpg" alt="personal brand" width="100" height="200"/>
+    <img src="images/Poster Spread Mockup.png" alt="Sabon Poster" width="300" height="200"/>
+  </div>
+</div>
 </section>
 
 <!-- FAQ SECTION -->  
 <section id="faq">
   <div class="container">
-    <h2 class= section-title>General FAQ's</h2>
-    <div>
+    <h2 class="section-title">General FAQ's</h2>
+    <div class="faq-item">
       <h3>When will you be graduating from SDSU?</h3>
       <p>I will be graduating from San Diego State University in May 2025.</p>
     </div>
-    <div>
+    <div class="faq-item">
       <h3>What do you have planned for after graduation?</h3>
       <p>After graduation, I plan to continue working in design, focusing on UI/UX and digital experiences. I'm excited to explore opportunities that allow me to apply my skills in user-centered design while growing as a creative professional.</p>
     </div>
-    <div>
+    <div class="faq-item">
       <h3>What was your favorite class you took at SDSU?</h3>
       <p>My favorite class was my UI/UX course, where I learned to design with accessibility, functionality, and user experience in mind. It solidified my interest in creating intuitive and engaging digital interfaces.</p>
     </div>
-    <div>
+    <div class="faq-item">
       <h3>What work are you most proud producing at SDSU?</h3>
       <p>I'm most proud of my Athletic Retail app project. It was a collaborative experience that deepened my understanding of UI/UX principles and taught me how to work effectively with a partner to bring a concept to life.</p>
     </div>
-    </div>
+  </div>
 </section>
 
 <!-- FOOTER SECTION -->  

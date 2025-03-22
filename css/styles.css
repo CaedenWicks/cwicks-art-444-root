@@ -4,12 +4,18 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: 'Haettenschweiler';
+    src: url('fonts/Haettenschweiler-Regular.woff') format('woff');
+  }
+  
+
 nav {
     background: #DDDBFF;
     width: 100%;
     text-align:center;
-    font-size: 45px;
-    font-family: "Haettenschweiler";
+    font-size: 36px;
+    font-family: 'Haettenschweiler', "neue-haas-grotesk-display", sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
     word-spacing: 100px;
@@ -25,7 +31,7 @@ nav {
   
 header {
     color: #000;
-    font-family: Haettenschweiler;
+    font-family: "Haettenschweiler";
     font-size: 200px;
     font-style: normal;
 }
@@ -52,7 +58,7 @@ section {
 h1 {
     font-size: 200px;
     color: #000;
-    font-family: Haettenschweiler;
+    font-family: "Haettenschweiler", Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -62,7 +68,7 @@ h2{
     margin:0;
 }
 #p{
-    font-family: Neue Haas Grotesk Display Pro, serif;
+    font-family: "neue-haas-grotesk-display", sans-serif;
 }
 .About-Text{
     font-size: 24px;
@@ -70,12 +76,12 @@ h2{
 }
 .Subheading{
     text-align: center;
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: "neue-haas-grotesk-display", sans-serif;
     color: #2F27CE;
 }
 .section-title{
-    font-family: Haettenschweiler;
-    font-size: 96px;
+    font-family: "Haettenschweiler";
+    font-size: 84px;
     font-weight: normal;
     margin:0;
     padding-bottom: 30px;
@@ -85,7 +91,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 10px;
-    width: 100%;
+    width: auto;
     text-align: center;
     bottom: 0;
 }
@@ -113,7 +119,7 @@ footer {
     color: #333;
 }
 h3{
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: "neue-haas-grotesk-display", sans-serif;
     font-size: 28px;
     margin:0;
     padding-top: 15px;
@@ -121,6 +127,56 @@ h3{
 #faq p{
     font-size: 16
 }
+.image-scroll, .image-scroll-2 {
+    max-width: 100%; /* Adjust this value as needed */
+    max-height: auto;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
+    padding: 10px;
+  }
+  .image-scroll-2 {
+    direction: rtl;
+  }
+  .image-scroll img, .image-scroll-2 img {
+    display: inline-block; /* Allows images to sit side by side */
+    height: 400px; /* Set a fixed height for all images */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between images */
+  }
+  /* Hide scrollbar */
+  .image-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .image-scroll-2::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Hover Effect: Scale Up for Links */
+.element a {
+    display: inline-block; /* Required for transform to work */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  .element a:hover {
+    transform: scale(1.3); /* Scale up on hover */
+  }
+  
+  /* Hide answers by default */
+.faq-item p {
+    display: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ddd;
+  }
+  
+  /* Show answer when hovering over the question */
+  .faq-item:hover p {
+    display: block;
+  }
+  
+
 /* TABLET VIEW */
 @media screen and (max-width: 992px) {
     nav {
@@ -134,7 +190,8 @@ h3{
     }
     .container {
         width: auto; /* Ensure container takes full width */
-        padding-left: 25px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     section {
@@ -168,6 +225,9 @@ h3{
     #faq p{
         font-size: 14px;
     }
+    .image-scroll img, .image-scroll-2 img {
+        height: 300px; /* Set a fixed height for all images */
+      }
 }
 
 
@@ -246,6 +306,25 @@ h3{
         height: auto; /* Maintain aspect ratio */
       }
       
-      
+      .image-scroll img, .image-scroll-2 img {
+        height: auto; /* Let the browser calculate height based on aspect ratio */
+        max-height: 300px; /* Set a reasonable max height for mobile screens */
+        width: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Reduce spacing between images for smaller screens */
+      }
+    
+      .image-scroll, .image-scroll-2 {
+        padding-bottom: 10px; /* Add some padding for better appearance */
+      }
+
+    #gallery .container {
+        display: block;
+        grid-template-columns: none;
+      }
+      #gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 }
 
