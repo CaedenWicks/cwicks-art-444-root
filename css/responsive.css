@@ -1,0 +1,50 @@
+/* TABLET VIEW */
+@media screen and (max-width:992px) {
+    nav {
+        font-size: 30px; /* Reduce nav font size */
+        word-spacing: 50px; /* Reduce spacing between links */
+    }
+    h1 {
+        font-size: 120px; /* Decrease header size */
+    }
+    .section-title {
+        font-size: 72px; /* Reduce section title size */
+    }
+    .About-Text {
+        font-size: 20px; /* Slightly smaller text */
+    }
+    .grid-container {
+        gap: 50px; /* Reduce gap between grid items */
+        max-width: 90%; /* Adjust grid width */
+    }
+}
+
+
+/* MOBILE VIEW */
+@media screen and (max-width: 478px) {
+    nav {
+        font-size: 24px; /* Further reduce font size */
+        word-spacing: 20px; /* Reduce spacing for readability */
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: aqua;
+    }
+    h1 {
+        font-size: 80px; /* Make header more compact */
+    }
+    .section-title {
+        font-size: 48px; /* Further reduce section titles */
+    }
+    .About-Text {
+        font-size: 18px; /* Adjust body text */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Switch to a single column */
+    }
+    footer {
+        width: 100%; /* Make footer full-width */
+        padding: 20px; /* Add more padding */
+    }
+}

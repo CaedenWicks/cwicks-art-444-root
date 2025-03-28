@@ -6,7 +6,7 @@ html {
 
 @font-face {
     font-family: 'Haettenschweiler';
-    src: url('fonts/Haettenschweiler-Regular.woff') format('woff');
+    src: url('../fonts/Haettenschweiler-Regular.woff') format('woff');
   }
   
 
@@ -285,7 +285,9 @@ h3{
         padding: 10px;
     
     }
-
+    #skills p{
+        max-width: 300px;
+    }
     #faq p {
         font-size: 12px;
         text-align: center;
