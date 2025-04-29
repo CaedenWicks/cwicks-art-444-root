@@ -181,6 +181,74 @@ nav a:hover {
     cursor: pointer;
     padding: 10px;
   }
+ /* Base Dark Mode Styles */
+body.dark-mode {
+    background-color: #000000; /* Dark background */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Adjust section backgrounds in dark mode */
+body.dark-mode section {
+    background-color: #000000; /* Slightly darker for sections */
+}
+
+/* Navbar background and link colors in dark mode */
+body.dark-mode nav {
+    background-color: #0a84ff; /* Blue navbar */
+}
+
+body.dark-mode nav a {
+    color: #ffffff; /* Light text for nav links */
+}
+
+/* Footer background and text in dark mode */
+body.dark-mode footer {
+    background-color: #000; /* Black footer */
+    color: #221E80; /* Purple text in footer */
+}
+
+/* Grid item text color */
+body.dark-mode .grid-item p {
+    color: #ccc; /* Light text in grid items */
+}
+
+/* Headings in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #ffffff; /* White text for headings */
+}
+
+/* FAQ items background */
+body.dark-mode .faq-item p {
+    background-color: #333; /* Darker background for FAQ answers */
+    color: #ddd; /* Light text for FAQ answers */
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #eee; /* Light background */
+    color: #222; /* Dark text */
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode Toggle Button in Dark Mode */
+body.dark-mode #darkModeToggle {
+    background: #333; /* Dark background in dark mode */
+    color: #fff; /* White text in dark mode */
+}
+
+  
 
 /* TABLET VIEW */
 @media screen and (max-width: 992px) {
@@ -231,6 +299,22 @@ nav a:hover {
         height: 300px; /* Set a fixed height for all images */
       }
 }
+/* Force white/light text for general text elements */
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span,
+body.dark-mode a,
+body.dark-mode div,
+body.dark-mode .About-Text,
+body.dark-mode .faq-item p,
+body.dark-mode .grid-item p {
+  color: #ffffff !important;
+}
+/* Dark mode for nav bar */
+body.dark-mode nav {
+    background-color: #221E80; /* A nice medium blue */
+  }
+  
 
 
 /* MOBILE VIEW */

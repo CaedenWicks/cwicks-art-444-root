@@ -1,11 +1,15 @@
 function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("hidden");
-  }
-  
-  // Optional: Close menu when clicking a link (for smooth UX)
-  document.querySelectorAll('#mobileMenu a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById("mobileMenu").classList.add("hidden");
-    });
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("hidden");
+}
+
+document.querySelectorAll('#mobileMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById("mobileMenu").classList.add("hidden");
   });
+});
+
+// --- dark mode toggle comes AFTER ---
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+});
