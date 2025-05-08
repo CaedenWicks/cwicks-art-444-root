@@ -9,7 +9,15 @@ html {
     src: url('../fonts/Haettenschweiler-Regular.woff') format('woff');
   }
   
-
+  #icon-popup {
+    position: absolute;
+    pointer-events: none;
+    font-size: 2rem;
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+  
 nav {
     background: #DDDBFF;
     width: 100%;
@@ -77,6 +85,7 @@ h2{
 .Subheading{
     text-align: center;
     font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 200;
     color: #2F27CE;
 }
 .section-title{
@@ -192,6 +201,10 @@ body.dark-mode section {
     background-color: #000000; /* Slightly darker for sections */
 }
 
+body.dark-mode .Subheading {
+    color: #DDDBFF;
+    font-weight: 200;
+}
 /* Navbar background and link colors in dark mode */
 body.dark-mode nav {
     background-color: #0a84ff; /* Blue navbar */
@@ -230,24 +243,83 @@ body.dark-mode .faq-item p {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    background: #eee; /* Light background */
-    color: #222; /* Dark text */
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/MoonIcon.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Remove the gray background */
     border: none;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 1.2rem;
     z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-image 0.3s;
 }
 
 /* Dark Mode Toggle Button in Dark Mode */
 body.dark-mode #darkModeToggle {
-    background: #333; /* Dark background in dark mode */
-    color: #fff; /* White text in dark mode */
+    background-image: url('../images/Sun\ icon.jpeg');
 }
 
+.icon {
+    transform: translateX(-50%);
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  #aboutIcon {
+    position: absolute;
+    top: 300px;  
+    left: 0px;
+    transform: rotate(-15deg);
+}
+
+
+body.dark-mode #aboutIcon {
+    content: url('../images/PNG/icon-about-light.png');
+    left: 50px;
+    width: 100px;
+  }
+  body.dark-mode #workIcon {
+    content: url('../images/PNG/icon-work-light.png');
+    width: 150px;
+  }
+  body.dark-mode #skillsIcon {
+    content: url('../images/PNG/icon-skills-light.png');
+  }
+  body.dark-mode #faqsIcon {
+    content: url('../images/PNG/icon-faqs-light.png');
+  }
+#workIcon {
+    position: absolute;
+    top: 350px;  
+    left: 125px;
+    transform: rotate(-15deg);
+    width: 150px;
+}
+
+#skillsIcon {
+    position: absolute;
+    top: 300px;  
+    left: 975px;
+    transform: rotate(15deg);
+    width: 100px;
+}
+
+
+#faqsIcon {
+    position: absolute;
+    top: 350px; 
+    left: 1050px;
+    transform: rotate(10deg);
+    width: 200px;
+}
+  .icon.visible {
+    opacity: 1;
+  }
   
 
 /* TABLET VIEW */

@@ -11,8 +11,7 @@
   <script src="script.js"></script>
 </head>
 <body>
-    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
-    <!-- rest of your content -->
+    <button id="darkModeToggle" aria-label="Toggle dark mode"></button>
   
 <!-- MAIN HEADER --> 
   <section id="header" class="header">
@@ -25,11 +24,19 @@
   <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
   <nav id="mobileMenu" class="hidden">
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#skills">Skills</a>
-    <a href="#faq">FAQ</a>
+    <a href="#about" data-target="aboutIcon">About</a>
+    <a href="#work" data-target="workIcon" >Work</a>
+    <a href="#skills" data-target="skillsIcon">Skills</a>
+    <a href="#faq" data-target="faqsIcon">FAQ</a>
   </nav>
+  <div class="popups">
+  <img src="images/icon-about.png" class="icon hidden" id="aboutIcon" alt="About Icon">
+  <img src="images/icon-work.png" class="icon hidden" id="workIcon" alt="Work Icon">
+  <img src="images/icon-skills.png" class="icon hidden" id="skillsIcon" alt="Skills Icon">
+  <img src="images/icon-faqs.png" class="icon hidden" id="faqsIcon" alt="FAQ Icon">
+</div>
+  <!-- Icon pop-up container -->
+<div id="icon-popup"></div>
   
 <!-- ABOUT SECTION --> 
 <section id="about">
